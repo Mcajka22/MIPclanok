@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  12 OCT 2021 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  26 OCT 2021 16:20
 entering extended mode
 **./MIPclanok.tex
 (MIPclanok.tex
@@ -242,8 +242,7 @@ tex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count269
 \l__pdf_internal_box=\box50
-)
-No file MIPclanok.aux.
+) (MIPclanok.aux)
 \openout1 = `MIPclanok.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -309,6 +308,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
+ (MIPclanok.out) (MIPclanok.out)
 \@outlinefile=\write3
 \openout3 = `MIPclanok.out'.
 
@@ -328,83 +328,35 @@ File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 33.
-
-
-LaTeX Warning: Reference `nejaka' on page 1 undefined on input line 45.
-
-
-LaTeX Warning: Reference `dolezita' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Reference `dolezitejsia' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Reference `zaver' on page 1 undefined on input line 47.
-
-
-LaTeX Warning: Reference `f:rozhod' on page 1 undefined on input line 53.
-
-
-LaTeX Warning: Reference `ina:nejake' on page 1 undefined on input line 67.
-
-
-LaTeX Warning: Reference `ina:nejake' on page 1 undefined on input line 67.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 67.
-
-LaTeX Warning: Citation `Coplien:MPD' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `Czarnecki:Staged' on page 1 undefined on input line 69
-.
-
-
-LaTeX Warning: Citation `Czarnecki:Progress' on page 1 undefined on input line 
-69.
-
-
-LaTeX Warning: Citation `PLP-Framework' on page 1 undefined on input line 69.
+(Font)              <7> on input line 63.
 
 [1
 
 {C:/Users/marti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-No file MIPclanok.bbl.
-[2] (MIPclanok.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `MIPclanok.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MIPclanok.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  DCA731DA2FC82593BB099E907EB500F3;982.
+(MIPclanok.bbl [2]) [3] (MIPclanok.aux)
+Package rerunfilecheck Info: File `MIPclanok.out' has not changed.
+(rerunfilecheck)             Checksum: DCA731DA2FC82593BB099E907EB500F3;982.
  ) 
 Here is how much of TeX's memory you used:
- 9279 strings out of 478864
- 138284 string characters out of 2848660
- 463104 words of memory out of 3000000
- 27061 multiletter control sequences out of 15000+600000
+ 9304 strings out of 478864
+ 138800 string characters out of 2848660
+ 463823 words of memory out of 3000000
+ 27072 multiletter control sequences out of 15000+600000
  416768 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,66p,345b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dp
-i600\csbx12.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csf
-onts/dpi600\cssl10.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/pub
-lic/csfonts/dpi600\csr6.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfou
-r/public/csfonts/dpi600\csr8.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\tcrm0600.pk> <C:\Users\marti\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/public/csfonts/dpi600\csti10.pk> <C:\Users\marti\AppData\Local\MiK
-TeX\fonts/pk/ljfour/public/csfonts/dpi600\csr7.pk> <C:\Users\marti\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\cstt10.pk> <C:\Users\marti\AppDa
-ta\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csbx10.pk> <C:\Users\mart
+ 60i,8n,66p,478b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\c
+sr6.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi
+600\csbx10.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\tcrm1000.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/publi
+c/csfonts/dpi600\csbx12.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/public/csfonts/dpi600\csti10.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/p
+k/ljfour/public/csfonts/dpi600\csr7.pk> <C:\Users\marti\AppData\Local\MiKTeX\fo
+nts/pk/ljfour/public/csfonts/dpi600\cssl10.pk> <C:\Users\marti\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/public/csfonts/dpi600\csr8.pk> <C:\Users\marti\AppData\Loc
+al\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk> <C:\Users\marti\AppDa
+ta\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\cstt10.pk> <C:\Users\mart
 i\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csr10.pk> <C:\User
 s\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi720\csbx12.pk> <
 C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csbx9
@@ -413,10 +365,11 @@ C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csbx9
 dpi600\csr9.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csf
 onts/dpi600\csr12.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\tcrm1200.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfou
-r/public/csfonts/dpi600\csr17.pk>
-Output written on MIPclanok.pdf (2 pages, 111238 bytes).
+r/public/csfonts/dpi600\csr17.pk><C:/Users/marti/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on MIPclanok.pdf (3 pages, 147540 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
