@@ -19,6 +19,11 @@ Krzysztof Czarnecki and Chang Hwan~Peter Kim.
 \newblock In {\em International Workshop on Software Factories, OOPSLA 2005},
   San Diego, USA, October 2005.
 
+\bibitem{1360168}
+D.B. Fogel, T.J. Hays, S.L. Hahn, and J.~Quon.
+\newblock A self-learning evolutionary chess program.
+\newblock {\em Proceedings of the IEEE}, 92(12):1947--1954, Dec 2004.
+
 \bibitem{PLP-Framework}
 Carnegie Mellon~University Software Engineering~Institute.
 \newblock A framework for software product line practice---version 5.0.

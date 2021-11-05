@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
+\usepackage{xcolor}
 \usepackage{cite}
 %\usepackage{times}
 
@@ -32,77 +32,36 @@
 \maketitle
 
 \begin{abstract}
-\ldots
+Cieľom článku je popísať a objasniť štruktúru algoritmu šachového enginu, vysvetliť myšlienkový postup za jej jednotlivými časťami a zanalyzovať univerzálne používané prístupy tvorenia algoritmu pri takej komplexnej hre, akou je šach. Článok sa taktiež zameriava na riešenie problémov a otázok s ktorými sa osoby podieľajúce na vývoji algoritmu stretnú a popisuje metódy ich riešenia, ako napríklad využívanie prvkov umelej inteligencie alebo ponáranie sa do princípov strojového učenia. \color{red} K záveru sa článok vyjadrí k fungovaniu určitých algoritmov, hardvéru a softvéru potrebnému k ich chodu ako aj potencionálnej budúcnosti šachových programov (*subject to change).
 \end{abstract}
 
 
 
 \section{Úvod}
-	„Šach je všetkým: umením, vedou aj športom“ – vyhlásil ruský šachový veľmajster Anatolij Karpov. Za posledné dve dekády sa vďaka rapídnemu pokroku v oblastí umelej inteligencie tento jeho výrok aspoň z jednej časti potvrdil – šachu vládnu stroje, ktoré dominujú ľudských protivníkov na základe ich bleskových kalkulácii a schopnosti naozaj sa poučiť z vlastných chýb. 
-
-	Fascinuje ma, čo stojí za takouto rýchlou evolúciou. Práve preto je cieľom mojej práce objasniť a zanalyzovať na základe akých princípov sa stavia model pre šachový algoritmus, aký prístup strojového učenia sa volí v tejto oblasti, ako sa vyhodnocuje nadradenosť jednotlivých ťahov a mnoho ďalších problémov s ktorými sa stretnú osoby podieľajúce sa na tvorbe algoritmu pri takej komplexnej hre, akou je šach.
+	„Šach je všetkým: umením, vedou aj športom“ – vyhlásil ruský šachový veľmajster Anatolij Karpov. Za posledné dve dekády sa vďaka rapídnemu pokroku v oblastí umelej inteligencie tento jeho výrok aspoň z jednej časti potvrdil – šachu vládnu stroje, ktoré dominujú ľudských protivníkov na základe ich bleskových kalkulácii a schopnosti naozaj sa poučiť z vlastných chýb. Je fascinujúce ako rýchlo prebehla evolúcia v oblasti šachových strojov. Od čias šachových majstrov skrývajúcich sa v "Mechanickom Turkovi" to už je síce 250 rokov, prvé softvéry schopné naozaj hrať šach sa začali vyvíjať pred približne 50 rokmi.
 
 
 
-\section{Nejaká časť} \label{nejaka}
+\section{Základy a materiálová hodnota} \label{zaklady}
+	Aj napriek tomu, že šach má jasne stanované pravidlá a určené limity pre pohyb figúrok, stále tu je veľmi vysoká variabilita - každý jeden ťah má značný dopad na štádium hry. Existujú však isté faktory, ktoré napovedajú ako je na tom hra a ktorý hráč ma najlepšie predpoklady zvíťaziť. Jedným z najznačnejších je materiálová hodnota figúrok. Jednotlivé figúrky majú všeobecne známu priradenú hodnotu - napr. jazdec a strelec sú obidvaja známy pod hodnotou 3 body, no nie je to také jednoduché. Ich hodnota taktiež závisí od viacerých faktorov - od pozície, teda ako dobre pokrývajú ostatné figúrky a zároveň v akej miere ohrozujú súperove figúrky a možné ťahy, ako aj od štádia hry, napríklad ku koncu hry kde je menej figúrok je dvojica strelcov nadradená dvojici jazdcov, nakoľko majú väčšiu mobilitu ako aj synergiu, keďže sú schopné voľnejšie sa hýbať po šachovnici a pokryť dve celé diagonály. Otázkou je teda ako nastaviť algoritmus tak, aby bol schopný robiť ťahy ktoré ho dovedú k lepšej pozícií a v konečnom dôsledku aj ku výhre?
 
-Z obr.~\ref{f:rozhod} je všetko jasné. 
+	Prirodzene, základné šachové pravidlá a pohyby sú do šachového programu vštiepené na začiatku jeho vývoja. Ďalším krokom je potrebné jasne definovať aké je v ktoromkoľvek momente rozloženie figúr, aké majú možné ťahy a ako sa navzájom ohrozujú alebo zakrývajú. Pre tento účel sa vo väčšine prípadov algoritmus modeluje nasledovne: Každé políčko na šachovnici reprezentuje vektor s dĺžkou 64 tak, že každý komponent vo vektore smeruje k možnej pozícii na šachovnici. Tieto komponenty neskôr môžu nabrať rôzne hodnoty ktoré budú reprezentovať buď figúrky daného hráča alebo prázdne polia \cite{1360168}. Teraz ale už nastáva čas, aby program začal robiť svoje prvé vlastné ťahy.
 
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
+\section{Vyhodnocovanie a vyhľadávanie ťahov} \label{vyhodnocovanie}
+	Pri začiatočnej fáze hry je potrebné algoritmus nejakým spôsobom usmerniť ako má postupovať. Univerzálne sa aplikujú dva postupy. Menej sofistikované algoritmy sa držia nejakým všeobecným pravidlám ako rozvíjať svoje jednotlivé figúrky. Tieto pravidlá sa dajú vizualizovať ako mapy šachovnice pre, ktoré priťahujú figúrky do určitých zón. Pre kráľa je napríklad esenciálne aby so dostal do bezpečia, teda jeho sa odporúča aby smeroval do rohov šachovnice. Naopak zas figúrka jazdca má svoju komfortnú zónu bližšie k strede šachovnice, kde má k dispozícii viac možných ťahov ako na kraji. Práve kvôli tomuto princípu je potrebné cielene formovať pomocou pravidiel program tak, aby usmerňoval svoje otváracie štádium hry na to aby posilnil svoju kontrolu nad centrom šachovnice. Druhý postup ktorý už využívajú pokročilejšie šachové programy sa zakladá na využití princípoch strojového učenia. Pre algoritmus sa stiahne rozsiahla databáza najhrávenejších a najúspešnejších otvorení ako aj otvorenia odohraté na najvyššej úrovni. Z tejto databázi algoritmus čerpá a modifikuje svoje otvorenia, ale pri následnom vývine hry už prichádzajú do vyhodnocovania neurónové siete. 
 
-
-
-\section{Iná časť} \label{ina}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-
-
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
-
+\subsection{Neurónové siete} \label{vyhodnocovanie:siete}
+\subsection{Prístupy} \label{vyhodnocovanie:siete}
+Táto citácia je dočasne potrebná na správny chod referencí. \cite{silver2017mastering}
 \begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
+\item Quiescence Search
+\item Alfa-Beta Prunning
+\item Monte Carlo Tree Search
 \end{itemize}
 
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
+\section{Testovanie} 
 
 
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
 
 
 
