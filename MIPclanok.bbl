@@ -1,32 +1,20 @@
 \begin{thebibliography}{1}
 
-\bibitem{Coplien:MPD}
-James~O. Coplien.
-\newblock {\em Multi-Paradigm Design for C++}.
-\newblock Addison-Wesley, 1999.
-
-\bibitem{Czarnecki:Staged}
-Krzysztof Czarnecki, Simon Helsen, and Ulrich Eisenecker.
-\newblock Staged configuration through specialization and multi-level
-  configuration of feature models.
-\newblock {\em Software Process: Improvement and Practice}, 10:143--169,
-  April/June 2005.
-
-\bibitem{Czarnecki:Progress}
-Krzysztof Czarnecki and Chang Hwan~Peter Kim.
-\newblock Cardinality-based feature modeling and constraints: A progress
-  report.
-\newblock In {\em International Workshop on Software Factories, OOPSLA 2005},
-  San Diego, USA, October 2005.
-
 \bibitem{1360168}
 D.B. Fogel, T.J. Hays, S.L. Hahn, and J.~Quon.
 \newblock A self-learning evolutionary chess program.
 \newblock {\em Proceedings of the IEEE}, 92(12):1947--1954, Dec 2004.
 
-\bibitem{PLP-Framework}
-Carnegie Mellon~University Software Engineering~Institute.
-\newblock A framework for software product line practice---version 5.0.
-\newblock \url{http://www.sei.cmu.edu/productlines/frame_report/}.
+\bibitem{fuller1973analysis}
+S.H. Fuller, J.G. Gaschnig, J.J. Gillogly, CARNEGIE-MELLON UNIV PITTSBURGH
+  PA~Dept. of~COMPUTER~SCIENCE., and Carnegie Mellon University.
+  Computer~Science Department.
+\newblock {\em Analysis of the Alpha-beta Pruning Algorithm}.
+\newblock Carnegie-Mellon University. Department of Computer Science, 1973.
+
+\bibitem{Oshri2015PredictingMI}
+Barak Oshri.
+\newblock Predicting moves in chess using convolutional neural networks.
+\newblock 2015.
 
 \end{thebibliography}
