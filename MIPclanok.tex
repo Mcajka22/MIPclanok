@@ -1,21 +1,18 @@
-% Metódy inžinierskej práce
 
 \documentclass[10pt,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
-\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[IL2]{fontenc} 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{url} % príkaz \url na formátovanie URL
-\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{url} 
+\usepackage{hyperref} 
 \usepackage{xcolor}
 \usepackage{cite}
-%\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Modelovanie algoritmu pre šachový engine\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Vladimír Mlynarovič}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Modelovanie algoritmu pre šachový program\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Vladimír Mlynarovič}} 
 
 \author{Martin Čajka\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
@@ -23,16 +20,14 @@
 	{\small \texttt{xcajkam@stuba.sk}}
 	}
 
-\date{\small 20. október 2021} % upravte
-
-
+\date{\small 14. december 2021} 
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-Cieľom článku je objasniť štruktúru algoritmu šachového enginu, vysvetliť myšlienkový postup za jej jednotlivými časťami a zanalyzovať univerzálne používané prístupy tvorenia algoritmu pri takej komplexnej hre, akou je šach. Článok sa taktiež zameriava na riešenie problémov a otázok s ktorými sa osoby podieľajúce na vývoji algoritmu stretnú a popisuje metódy ich riešenia, ako napríklad využívanie prvkov umelej inteligencie alebo ponáranie sa do princípov strojového učenia. K záveru sa článok vyjadrí k fungovaniu algoritmu AlphaZero, procese jeho tréningu a následného porovnania s vtedajšími najsilnejšími programami pre jednotlivé hry.
+Cieľom článku je objasniť štruktúru algoritmu šachového programu, vysvetliť myšlienkový postup za jej jednotlivými časťami a zanalyzovať univerzálne používané prístupy tvorenia algoritmu pri takej komplexnej hre, akou je šach. Článok sa taktiež zameriava na riešenie problémov a otázok s ktorými sa osoby podieľajúce na vývoji algoritmu stretnú a popisuje metódy ich riešenia, ako napríklad využívanie prvkov umelej inteligencie alebo ponáranie sa do princípov strojového učenia. K záveru sa článok vyjadrí k fungovaniu algoritmu AlphaZero, procese jeho tréningu a následného porovnania s vtedajšími najsilnejšími programami pre jednotlivé hry.
 \\~\\
 Kľúčové slová: šachový algoritmus, neurónové siete, strojové učenie, umelá inteligencia a šach
 \end{abstract}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  14 DEC 2021 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  14 DEC 2021 19:33
 entering extended mode
 **./MIPclanok.tex
 (MIPclanok.tex
@@ -261,26 +261,26 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 ) (MIPclanok.aux)
 \openout1 = `MIPclanok.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -307,7 +307,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 25.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -321,31 +321,31 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count276
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
  (MIPclanok.out) (MIPclanok.out)
 \@outlinefile=\write3
 \openout3 = `MIPclanok.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 33.
+(Font)              <17.28> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 33.
+(Font)              <12> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 33.
+(Font)              <8> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 33.
+(Font)              <6> on input line 28.
 LaTeX Font Info:    Trying to load font information for IL2+cmtt on input line 
-33.
+28.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/cslatex/base\il2cmtt.fd
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 33.
+(Font)              <5> on input line 28.
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
@@ -353,7 +353,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
 {C:/Users/marti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Citation `bijl_tiet' on page 2 undefined on input line 53.
+LaTeX Warning: Citation `bijl_tiet' on page 2 undefined on input line 48.
 
 [2] [3]
 
@@ -362,47 +362,47 @@ ersion <1.7>, but at most version <1.5> allowed
 <AlphaBeta.pdf, id=71, 614.295pt x 262.0992pt>
 File: AlphaBeta.pdf Graphic file (type pdf)
 <use AlphaBeta.pdf>
-Package pdftex.def Info: AlphaBeta.pdf  used on input line 75.
+Package pdftex.def Info: AlphaBeta.pdf  used on input line 70.
 (pdftex.def)             Requested size: 368.57983pt x 157.26071pt.
 
-Overfull \hbox (23.57983pt too wide) in paragraph at lines 75--76
+Overfull \hbox (23.57983pt too wide) in paragraph at lines 70--71
  [][] 
  []
 
 
 LaTeX Warning: Citation `bertsekas2021lessons' on page 4 undefined on input lin
-e 87.
+e 82.
 
 [4 <./AlphaBeta.pdf>]
 
 LaTeX Warning: Citation `silver2017mastering' on page 5 undefined on input line
- 89.
+ 84.
 
 <GrafyMIP2.jpg, id=88, 241.3818pt x 76.24484pt>
 File: GrafyMIP2.jpg Graphic file (type jpg)
 <use GrafyMIP2.jpg>
-Package pdftex.def Info: GrafyMIP2.jpg  used on input line 93.
+Package pdftex.def Info: GrafyMIP2.jpg  used on input line 88.
 (pdftex.def)             Requested size: 193.1057pt x 60.99594pt.
 
 LaTeX Warning: Citation `silver2017mastering' on page 5 undefined on input line
- 94.
+ 89.
 
 
 LaTeX Warning: Citation `silver2017mastering' on page 5 undefined on input line
- 94.
+ 89.
 
 <GrafyMIP1.jpg, id=89, 340.75305pt x 111.65715pt>
 File: GrafyMIP1.jpg Graphic file (type jpg)
 <use GrafyMIP1.jpg>
-Package pdftex.def Info: GrafyMIP1.jpg  used on input line 100.
+Package pdftex.def Info: GrafyMIP1.jpg  used on input line 95.
 (pdftex.def)             Requested size: 272.6028pt x 89.32582pt.
 
 LaTeX Warning: Citation `silver2017mastering' on page 5 undefined on input line
- 101.
+ 96.
 
 
 LaTeX Warning: Citation `silver2017mastering' on page 5 undefined on input line
- 101.
+ 96.
 
 [5 <./GrafyMIP2.jpg> <./GrafyMIP1.jpg>] [6] (MIPclanok.bbl) [7] (MIPclanok.aux)
 
@@ -414,7 +414,7 @@ Package rerunfilecheck Info: File `MIPclanok.out' has not changed.
 Here is how much of TeX's memory you used:
  9794 strings out of 478864
  144782 string characters out of 2848660
- 477728 words of memory out of 3000000
+ 477729 words of memory out of 3000000
  27555 multiletter control sequences out of 15000+600000
  415903 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -437,9 +437,9 @@ C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csr12
 rm1200.pk> <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/
 dpi600\csr17.pk><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb>
-Output written on MIPclanok.pdf (7 pages, 384120 bytes).
+Output written on MIPclanok.pdf (7 pages, 384415 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
+ 568 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
